@@ -7,6 +7,7 @@ import Dashboard from './Components/Dashboard';
 import MenuItem from './Components/MenuItem'
 import Category from './Components/Category'
 import EditCategory from './Components/EditCategory';
+import OrderItem from './Components/OrderItem';
 
 
 function App() {
@@ -19,9 +20,8 @@ function App() {
                 <Route path='/login' element={<Login />} />
                 <Route path='/otp' element={<Otp />}/>
                 <Route path='/dashboard/*' element={<Dashboard />} />
-                <Route path='/editcategory' element={<EditCategory />} />
-                <Route path='/category' element={<Category />} />
-                </Routes>
+                <Route path='/orderitem' element={<OrderItem/>} />
+            </Routes>
         </div>
 
     )
