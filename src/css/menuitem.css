@@ -1,0 +1,91 @@
+.feature-card {
+    width: 50%;
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+}
+
+p {
+    padding-top: 0;
+}
+
+.img-div {
+    position: relative;
+}
+
+.image-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    overflow: hidden;
+}
+
+.item-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.veg {
+    padding: 0;
+    text-align: end;
+}
+.veg-img {
+    width: 50%;
+    padding-top: 1rem;
+}
+
+.feature-heading {
+    padding-top: 1rem;
+}
+
+.icon {
+    padding-top: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.categoryButton
+{
+    padding-left:2%;
+}
+
+.mainContent {
+    border-top: 0.5px solid #d7d7d7;
+    border-bottom: 0.5px solid #d7d7d7;
+    border-radius: 5px;
+}
+
+.form-switch {
+    margin-left: 10px;
+}
+
+.inStock {
+    width: 20px;
+}
+
+.inStock:checked {
+    background-color: #004932;
+    border-color: #000;
+    box-shadow: 0 0 0 0;
+}
+
+.inStock:active {
+    background-color: #fff;
+    box-shadow: 0 0 0 0;
+}
+
+.updel {
+    margin-right: 10px;
+}
+
+.variantDropDownBtn {
+    border-radius: 50%;
+    border: 0.5px solid #dfdede;
+}
+
+.icon {
+    cursor: pointer;
+}

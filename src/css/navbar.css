@@ -1,0 +1,55 @@
+.navbar {
+    background-color: #ffffff;
+    top: 0;
+    margin-top: 0;
+    padding-top: 0;
+    margin-right: 30px;
+
+}
+.glassElement{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+}
+.navbaropen {
+    margin-left: 285px;
+}
+
+.navbarclose {
+    margin-left: 165px;
+}
+
+.home {
+    color: white;
+}
+
+.navbar-brand, .navbar-brand:hover {
+    color: white;
+    margin-left: 10px;
+}
+
+.outlet-btn {
+    background-color: transparent;
+    color: #000000;
+    font-size: medium;
+    font-weight: 500;
+    border: none;
+    text-decoration: underline;
+    outline: none;
+    box-shadow: 0 0 0 0;
+}
+
+.outlet-btn:hover,
+.outlet-btn:focus,
+.outlet-btn:active {
+    color: #656565;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 0;
+}
+
+.modal-seting {
+    max-width: 580px;
+}

@@ -1,0 +1,31 @@
+.iconImage {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55px;
+    height: 55px;
+}
+
+.button {
+    border: 0;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 10%;
+    box-shadow: 0rem 0.2rem 0.2rem rgb(194, 194, 194);
+}
+
+p {
+    color: #000;
+    font-weight: 600;
+}
+
+
+.selected {
+    background-color:#a3c4b2; /* Replace with your desired color */
+}
+
+.notselected
+{
+    background-color: white;
+}
