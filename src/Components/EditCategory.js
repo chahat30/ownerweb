@@ -663,8 +663,11 @@ export default function EditCategory(props) {
                                     description={product.description} 
                                     variants={product.variants}  
                                     productEdit={true} 
+<<<<<<< HEAD
                                     productid={product._id}
                                     instock={product.inStock}
+=======
+>>>>>>> c2c89bfa771e35fcc9ffdf28bf66a232be0e7f52
                                     onClick={(action) => handleUpDel(action, product._id, product.productName, product.description, product.price, product.veg, product.variants, product.productImage.url)}
                                 />
                             </div>

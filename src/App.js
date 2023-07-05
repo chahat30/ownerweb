@@ -20,7 +20,10 @@ function App() {
                 <Route path='/login' element={<Login />} />
                 <Route path='/otp' element={<Otp />}/>
                 <Route path='/dashboard/*' element={<Dashboard />} />
+<<<<<<< HEAD
                 <Route path='/orderitem' element={<OrderItem/>} />
+=======
+>>>>>>> c2c89bfa771e35fcc9ffdf28bf66a232be0e7f52
             </Routes>
         </div>
 

@@ -15,10 +15,13 @@ import Outlet from './Components/Outlet'
 import Category from './Components/Category';
 import EditCategory from './Components/EditCategory';
 import Outletdetails from './Components/Outletdetails';
+<<<<<<< HEAD
 import { ToastContainer } from 'react-toastify';
 import SidebarState from './context/sidebar/sidebarState'
 import OrderItem from './Components/OrderItem';
 import OrderState from './context/orders/orderState';
+=======
+>>>>>>> c2c89bfa771e35fcc9ffdf28bf66a232be0e7f52
 
 const router = createBrowserRouter([
     {
@@ -68,8 +71,12 @@ const router = createBrowserRouter([
             {
                 path:"outletdetails",
                 element:<Outletdetails/>
+<<<<<<< HEAD
             },
             {
+=======
+            }
+>>>>>>> c2c89bfa771e35fcc9ffdf28bf66a232be0e7f52
                 path: "addcategory",
                 element: <EditCategory />
             },
@@ -79,6 +86,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
+<<<<<<< HEAD
         <ToastContainer closeOnClick draggable pauseOnHover/>
         <OrderState>
             <SidebarState>
@@ -89,5 +97,12 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 </CategoryState>
             </SidebarState>
         </OrderState>
+=======
+        <CategoryState>
+            <AuthState>
+                <RouterProvider router={router} />
+            </AuthState>
+        </CategoryState>
+>>>>>>> c2c89bfa771e35fcc9ffdf28bf66a232be0e7f52
     </React.StrictMode>
 );

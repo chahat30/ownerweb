@@ -14,7 +14,11 @@ export default function Menu() {
     const [loadingCat, setLoadingCat] = useState(false)
     const [loadingPro, setLoadingPro] = useState(false)
     const [selectedCategory, setSelectedCategory] = useState('All');
+<<<<<<< HEAD
     const { setCategoryDetails } = useContext(CategoryContext)
+=======
+    const { categoryDetails, setCategoryDetails } = useContext(CategoryContext)
+>>>>>>> c2c89bfa771e35fcc9ffdf28bf66a232be0e7f52
     const navigate = useNavigate()
 
     const handleEditCategory = (id,name,iconUrl,iconId,productArray) => {
@@ -69,7 +73,11 @@ export default function Menu() {
     return (
         <>
         <Navbar/>
+<<<<<<< HEAD
         <div className="container-fluid main-div mt-5" style={{ padding: 0, margin: 0 }}>
+=======
+        <div className="container-fluid main-div" style={{ padding: 0, margin: 0 }}>
+>>>>>>> c2c89bfa771e35fcc9ffdf28bf66a232be0e7f52
             <div className="d-flex flex-row justify-content-start align-items-center">
                 <h2 className="categoryHead my-5">Categories </h2>
                 <Link to={'/dashboard/addcategory'}><i className="fa-solid fa-circle-plus fa-2xl plus" style={{color: "#004932"}} ></i></Link>
@@ -107,6 +115,7 @@ export default function Menu() {
                         {productWithCat.products.length>0 ?
                             (productWithCat.products.map((product) => {
                                 return <div className="col-lg-6" key={product._id}>
+<<<<<<< HEAD
                                     <MenuItem 
                                         productImage={product.productImage.url} 
                                         productName={product.productName} 
@@ -118,6 +127,9 @@ export default function Menu() {
                                         productid={product._id} 
                                         instock={product.inStock} 
                                     />
+=======
+                                    <MenuItem productImage={product.productImage.url} productName={product.productName} productPrice={product.price} veg={product.veg} description={product.description} variants={product.variants} productEdit={false} />
+>>>>>>> c2c89bfa771e35fcc9ffdf28bf66a232be0e7f52
                                 </div>
                             })) : 
                             <p className="d-flex justify-content-center" style={{fontWeight: 400}}>No products found for {productWithCat.category}</p>

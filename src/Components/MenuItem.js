@@ -6,12 +6,17 @@ import 'react-toastify/dist/ReactToastify.css';
 export default function MenuItem(props) {
 
     const [variantToggle, setVariantToggle] = useState(false)
+<<<<<<< HEAD
     const [isChecked, setIsChecked] = useState(props.instock)
+=======
+    const [stockToggle, setStockToggle] = useState(true)
+>>>>>>> c2c89bfa771e35fcc9ffdf28bf66a232be0e7f52
 
     const handleVariantButtonClick = () => {
         setVariantToggle(!variantToggle)
     }
 
+<<<<<<< HEAD
     const checkedToggle = async (e, productid) => {
         setIsChecked(!isChecked)
 
@@ -56,6 +61,10 @@ export default function MenuItem(props) {
                 },
             }
         );
+=======
+    const toggle = () => {
+        console.log(!stockToggle);
+>>>>>>> c2c89bfa771e35fcc9ffdf28bf66a232be0e7f52
     }
 
     return (
@@ -64,7 +73,11 @@ export default function MenuItem(props) {
             <div className="topRow my-1 d-flex justify-content-between">
                 <div className="switch mt-1">
                     <div className="form-check form-switch">
+<<<<<<< HEAD
                         <input className="form-check-input inStock" onChange={(e) => checkedToggle(e, props.productid)} type="checkbox" checked={isChecked} key={props.productid} />
+=======
+                        <input className="form-check-input inStock" onChange={toggle} type="checkbox" defaultChecked id="flexSwitchCheckChecked" />
+>>>>>>> c2c89bfa771e35fcc9ffdf28bf66a232be0e7f52
                         <label htmlFor="">Available</label>
                     </div>
                 </div>
@@ -101,7 +114,11 @@ export default function MenuItem(props) {
                         </button>
                     </div>
                     {variantToggle &&
+<<<<<<< HEAD
                         <div className={`variantsDisplay `} >
+=======
+                        <div className={`variantsDisplay`}>
+>>>>>>> c2c89bfa771e35fcc9ffdf28bf66a232be0e7f52
                             <h3 className="d-flex justify-content-center my-2">Variants</h3>
                             <div className="row">
                                 {props.variants.map((variant) => {
